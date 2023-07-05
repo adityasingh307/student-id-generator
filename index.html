@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title">ID Card Generator</div>
+      <div class="sub-container">
+        <div class="form-container">
+          <h3>Enter Student Details</h3>
+          <div class="form-elem">
+            <form action="">
+              <label for="name">Enter Name:</label>
+              <div class="form-sub-div">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="form-name" />
+              </div>
+              <label for="name">Enter College Name:</label>
+              <div class="form-sub-div">
+                <i class="fa-solid fa-building-columns"></i>
+                <input type="text" id="form-college" />
+              </div>
+              <label for="name">Enter Location:</label>
+              <div class="form-sub-div">
+                <i class="fa-solid fa-address-book"></i>
+                <input type="text" id="form-location" />
+              </div>
+
+              <label for="">Enter student's picture:</label>
+              <input type="file" id="file_image" />
+            </form>
+            <button onclick="getDetails()">Generate Card</button>
+          </div>
+        </div>
+        <div id="id-container">
+          <p>Generated ID Card</p>
+          <div class="id-card">
+            <div class="id-photo-container">
+              <div id="id-user-photo"></div>
+            </div>
+            <div class="users-details">
+              <div class="detail-title">Name: <span id="user-name"></span></div>
+              <div class="detail-title">
+                College Name: <span id="college-name"></span>
+              </div>
+              <div class="detail-title">
+                Location: <span id="user-location"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
