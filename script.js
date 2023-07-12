@@ -7,7 +7,7 @@ function getDetails() {
     document.getElementById("user-name").innerHTML = name_val;
     document.getElementById("college-name").innerHTML = college_val;
     document.getElementById("user-location").innerHTML = address_val;
-    document.getElementById("id-user-photo").style.backgroundImage = "url('photo.jpg')";
+    document.getElementById("id-user-photo").style.backgroundImage = "url("+fileupload+")";
     document.getElementById("id-container").style.display = "flex";
 
 
